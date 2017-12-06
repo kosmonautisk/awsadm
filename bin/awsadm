@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby -U
+
+require "awsadm"
+
+begin
+  Awsadm::Cli.start(ARGV)
+rescue Interrupt
+  exit 1
+end
