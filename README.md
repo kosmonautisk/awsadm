@@ -1,22 +1,22 @@
 # awsadm
 
-A command-line tool to manage Amazon Web Services (AWS) Elastic Compute Cloud (EC2) spot instance requests, instances and images.
+A command-line tool to manage Amazon Web Services (AWS) Elastic Compute Cloud (EC2) spot instance requests, instances and images. It replicates some functionality of the `aws` command, but takes a little inspiration from the SmartOS command [vmadm](https://smartos.org/man/1m/vmadm). 
 
-*Note: This tools is highly experimental. Use at your own risk!*
+*Note: This tool is highly experimental. Use at your own risk!*
 
-# Installation
+## Installation
 
 ```
 $ gem install awsadm
 ```
 
-# Environment variables
+## Environment variables
 
-* AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY: [Credentials](http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for using AWS
+* AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY: [Credentials](http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for using AWS
 * AWS_DEFAULT_REGION: Default AWS [region](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions)
-* AWSADM_SECURITY_GROUP: Name of [security group](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html) to use
+* AWSADM_SECURITY_GROUP: [Security group](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html) ID
 
-# Usage
+## Usage
 
 ```
 awsadm commands:
@@ -33,13 +33,13 @@ Options:
   v, [--verbose], [--no-verbose]
 ```
 
-# To do
+## To do
 
-* Tests, tests, tests
-* More and better environment variable and input checks
+* Write tests
 * Sort image list by creation date
-* Implement support for other parts of the Amazon Web Services
+* Implement better environment variable and command-line input checks
+* Implement support for other relevant parts of AWS (security group management, etc)
 
-# License
+## License
 
 [MIT License](http://opensource.org/licenses/MIT)
