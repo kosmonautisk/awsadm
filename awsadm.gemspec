@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Awsadm::VERSION
   spec.authors       = ["Jimmy Thelander"]
   spec.email         = ["jimmy.thelander@gmail.com"]
-  spec.summary       = %q{Command-line tool for AWS resources.}
+  spec.summary       = %q{EXPERIMENTAL: Command-line tool for AWS resources.}
   spec.description   = %q{Manage your AWS resources from the command-line.}
   spec.homepage      = "https://github.com/thelander/awsadm"
   spec.license       = "MIT"
